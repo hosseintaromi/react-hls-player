@@ -14,6 +14,7 @@
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
+    "commit": "git-cz",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
@@ -60,18 +61,24 @@
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
     "babel-loader": "^9.1.3",
+    "cz-conventional-changelog": "^3.3.0",
     "husky": "^8.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-is": "^18.2.0",
+    "semantic-release": "^21.1.1",
     "size-limit": "^8.2.6",
     "tsdx": "^0.14.1",
     "tslib": "^2.6.2",
-    "typescript": "^5.2.2",
-    "semantic-release": "^21.1.1"
+    "typescript": "^5.2.2"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/hosseintaromi/react-hls-player.git"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
