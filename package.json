@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "release": {
     "branches": [
-      "master"
+      "main"
     ]
   },
   "typings": "dist/index.d.ts",
