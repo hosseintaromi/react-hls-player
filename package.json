@@ -1,5 +1,5 @@
 {
-  "version": "0.1.1",
+  "version": "0.0.0-development",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -19,7 +19,8 @@
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "semantic-release": "semantic-release"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -66,6 +67,11 @@
     "size-limit": "^8.2.6",
     "tsdx": "^0.14.1",
     "tslib": "^2.6.2",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "semantic-release": "^21.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hosseintaromi/react-hls-player.git"
   }
 }
