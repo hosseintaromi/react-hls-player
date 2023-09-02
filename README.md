@@ -4,5 +4,3 @@ in this package you can create hls player with a lot of options like change qual
 change playback speed
 
 ## usage
-
-install it and pass the object and enjoy it
