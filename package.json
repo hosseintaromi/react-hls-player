@@ -1,0 +1,71 @@
+{
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "@hosseintaromi/react-hls-player",
+  "author": "hossein taromi",
+  "module": "dist/hlsplayer.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/hlsplayer.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/hlsplayer.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.22.11",
+    "@size-limit/preset-small-lib": "^8.2.6",
+    "@storybook/addon-essentials": "^7.4.0",
+    "@storybook/addon-info": "^5.3.21",
+    "@storybook/addon-links": "^7.4.0",
+    "@storybook/addons": "^7.4.0",
+    "@storybook/react": "^7.4.0",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "babel-loader": "^9.1.3",
+    "husky": "^8.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-is": "^18.2.0",
+    "size-limit": "^8.2.6",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2"
+  }
+}
