@@ -38,7 +38,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@hosseintaromi/react-hls-player",
+  "name": "@hosseintaromi/react-hls-player1",
   "author": "hossein taromi",
   "module": "dist/hlsplayer.esm.js",
   "size-limit": [
