@@ -5,6 +5,6 @@ export interface SayHelloPropsType {
 
 export const SayHello = ({ name }: SayHelloPropsType) => {
     return (
-        <div>hello {name}!!!!!!</div>
+        <div>hello and i love you{name}!!!!!!</div>
     )
 }
